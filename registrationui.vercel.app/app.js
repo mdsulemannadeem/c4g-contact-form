@@ -68,7 +68,7 @@ var qual = document.getElementsByName("c");
 
       that.show();
       // fetch('http://localhost:9000/register',{
-      fetch('https://c4g-contact-form.vercel.app/registrationui.vercel.app/index.html',{
+      fetch('https://registration-eta.vercel.app/register',{
         method: 'post',
         body:data,
         headers: {
