@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   
+<!-- Mirrored from registrationui.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 May 2024 09:05:58 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+      <meta charset="UTF-8" />
+      <link rel="stylesheet" href="style.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Crashtech Registration</title>
+   </head>
+   <body>
+    <div id="spinner">
+      <img src="ajax-loader.gif"/>
+    </div>
+      <div class="container">
+         <div class="title">
+            <img src="logo/Crashtech%20logo%20only%20without%20background%20Small%20Size.png" alt="crashtech logo" class="logo">
+            </img>
+            <span class="title-text">Welcome to Crashtech</span><BR>
+            </div>
+         <div class="content">
+            <form id="form" name="form" action="#">
+               <div class="user-details">
+                  <div class="input-box form-control">
+                     <span class="details">Full Name<span style="color: red">*</span></span>
+                     <input
+                        type="text"
+                        id="name"
+                        placeholder="Enter your name"
+                        onkeyup="validate(event)"
+                        class="isRequired"
+                        />
+                  </div>
+                  <div class="input-box">
+                     <span class="details">Date of Birth<span style="color: red">*</span></span>
+                     <input class="isRequired" type="date" id="dob"/>
+                  </div>
+                  <div class="input-box form-control">
+                     <span class="details">Email<span style="color: red">*</span></span>
+                     <input
+                        type="email"
+                        class="isRequired"
+                        id="email"
+                        placeholder="Enter your email"
+                        onkeyup="validate(event)"
+                        />
+                  </div>
+                  <div class="input-box form-control">
+                     <span class="details">Phone Number<span style="color: red">*</span>
+                     </span>
+                     <input
+                        id="phone"
+                        placeholder="Enter your number"
+                        onkeyup="validate(event)"
+                        maxlength="13"
+                        class="isRequired"
+                        />
+                  </div>
+                  <div class="input-box">
+                     <span class="details">School/College/University<span style="color: red">*</span></span>
+                     <input type="text" id="institute" placeholder="institute name" class="isRequired"  onkeyup="validate(event)"/>
+                  </div>
+                  <div class="input-box">
+                     <span class="details">Present city</span>
+                     <input type="text" id="city" placeholder="Enter your city name" />
+                  </div>
+               </div>
+               <div class="qualifications">
+                  <input type="radio" name="c" value="10th" id="dott-1" />
+                  <input type="radio" name="c" value="12th" id="dott-2" />
+                  <input type="radio" name="c" value="UG" id="dott-3" />
+                  <input type="radio" name="c" value="PG" id="dott-4" />
+                  <span class="qualification-title">Latest Qualification</span>
+                  <div class="category">
+                     <label for="dott-1">
+                     <span class="dot a"></span>
+                     <span class="qualification">10th</span>
+                     </label>
+                     <label for="dott-2">
+                     <span class="dot b"></span>
+                     <span class="qualification">12th</span>
+                     </label>
+                     <label for="dott-3">
+                     <span class="dot c"></span>
+                     <span class="qualification">UG</span>
+                     </label>
+                     <label for="dott-4">
+                     <span class="dot d"></span>
+                     <span class="qualification">PG</span>
+                     </label>
+                  </div>
+               </div>
+               <div class="button">
+                  <input type="button" id="submit" value="Register" />
+               </div>
+            </form>
+         </div>
+      </div>
+      <script src="app.js"></script>
+   </body>
+
+<!-- Mirrored from registrationui.vercel.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 May 2024 09:05:59 GMT -->
+</html>
