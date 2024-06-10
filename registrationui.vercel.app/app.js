@@ -67,8 +67,8 @@ var qual = document.getElementsByName("c");
       });
 
       that.show();
-      fetch('http://localhost:9000',{
-    
+      // fetch('http://localhost:9000/register',{
+      fetch('https://registration-eta.vercel.app/register',{
         method: 'post',
         body:data,
         headers: {
